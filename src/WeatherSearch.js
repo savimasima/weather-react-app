@@ -54,9 +54,15 @@ export default function WeatherSearch() {
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
+        <a href="https://github.com/savimasima/weather-react-app">GitHub</a>
       </div>
     );
   } else {
-    return form;
+    return (
+      <div>
+        {form}
+        <a href="https://github.com/savimasima/weather-react-app">GitHub</a>
+      </div>
+    );
   }
 }
